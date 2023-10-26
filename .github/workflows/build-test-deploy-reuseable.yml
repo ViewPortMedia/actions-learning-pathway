@@ -1,7 +1,7 @@
 name: build-test-deploy-reuseable
 on: push
 jobs:
-  build-test-deploy-reuseable:
+  build-test-deploy:
     # Importing a reusable workflow from another repository and branch
     uses: ViewPortMedia/vpm-github-workflows/.github/workflows/build-test-deploy-reuseable.yml@main
     # Passing 'node-version' as an input parameter to the reusable workflow
