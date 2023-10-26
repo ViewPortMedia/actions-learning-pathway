@@ -13,6 +13,8 @@ jobs:
           node-version: "18.x"
       - run: npm install
       - run: npm run build
+      - name: execute a bash script
+      - run: ./bash-script.sh
   test:
     needs: build
     runs-on: ubuntu-latest
